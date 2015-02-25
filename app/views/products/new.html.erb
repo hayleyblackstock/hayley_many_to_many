@@ -16,7 +16,7 @@
      </p>
 
       <p>
-        <!-- f.collection_select(ALL COMPANIES) -->
+        <%= f.collection_select :company_id, Company.all, :id, :name, {include_blank: "Select Company"}, {class: "form-control"} %>
      </p>
 
 <%= f.submit %>
