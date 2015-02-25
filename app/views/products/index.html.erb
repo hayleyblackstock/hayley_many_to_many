@@ -20,7 +20,7 @@
               <td><%=link_to product.name, product_path(product) %> </td>
               <td>$<%=product.price.round(2) %></td>
               <td>PUT COMPANY I BELONG TO HERE</td>
-              <td><%= link_to 'Review Product',  %></td>
+              <td><%= link_to "Review Product", new_product_product_review_path(product) %></td>
          </tr>
             <% end %>
       </tbody>
