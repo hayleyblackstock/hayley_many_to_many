@@ -1,22 +1,26 @@
-#### Modeling Practice
+Modeling Practice
 
-bundle
+    bundle
 
-rake db:create db:migrate db:seed
+    rake db:create db:migrate db:seed
 
-Data model: Look at Schema
+    Data model: Look at Schema
 
-No need to create migrations or alter the schema.
+    No need to create migrations or alter the schema.
 
-###### Stories
+    ###### Stories
 
-- The last dev team left this app mid build. It is a review website for products and companies.
+    - The last dev team left this app mid build. It is a review website for products and companies.
 
-- Don't worry about Edit pages.
+    - Don't worry about Edit pages.
 
-- The Authentication/Session controller is very basic with no password for authentication. Don't worry about this. It is there to add the current_user's ID to the review they are writing.
+    - The Authentication/Session controller is very basic with no password for authentication. Don't worry about this. It is there to add the current_user's ID to the review they are writing.*/
 
-- We are missing some stuff for Companies and Products. There are Index pages but that is it. Add Show Pages for Companies and Products that link from their name in the index page in their respective table. Add the ability to create Companies and Products.
+- We are missing some stuff for Companies and Products. There are Index pages but that is it.
+        Add Show Pages for Companies that link from their name in the index page in their respective table.
+        Add Show Pages for Products that link from their name in the index page in their respective table
+        Add the ability to create Companies
+        Add the ability to create Products.
 
 - A Product belongs to a Company but the resources are not nested. On the new product page the client wants a collection select of all of the companies in our database. There is a link to a new product page but it is missing the collection select and the 'products#create' action is empty.
 
